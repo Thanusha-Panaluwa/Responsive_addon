@@ -84,3 +84,51 @@ h2 {
     justify-content: center;
   }
 }
+
+.footer {
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/755/original/Colombo.jpg?1694506013);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding-top: 60px;
+  height: 350px;
+}
+
+.foot {
+  display: flex;
+  margin: 5px;
+  padding: 30px;
+}
+.footer h3 {
+  font-family: "Abril Fatface", cursive;
+  font-family: "Libre Baskerville", serif;
+}
+.second h2 {
+  font-family: "Abril Fatface", cursive;
+  font-family: "Libre Baskerville", serif;
+}
+.one {
+  width: 1100px;
+  height: 150px;
+  padding: 6px;
+  margin: 0 auto;
+}
+
+.two {
+  width: 1100px;
+  height: 150px;
+  padding: 6px;
+  margin: 0 auto;
+}
+
+.three {
+  width: 1100px;
+  height: 150px;
+  padding: 6px;
+  margin: 0 auto;
+}
