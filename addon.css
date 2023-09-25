@@ -1,3 +1,54 @@
+@media (max-width: 960px) {
+  img,
+  video {
+    max-width: 100%;
+  }
+
+  body {
+    text-align: center;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    font-size: 9px;
+  }
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 46px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  .grid-3-columns {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
+  }
+  header .ella {
+    font-size: 60px;
+  }
+
+  .cafe-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16 / 9;
+  }
+}
+
 .up {
   background-color: rgb(7, 7, 54);
 }
@@ -16,6 +67,24 @@ header {
   text-align: center;
   padding: 200px 200px;
 }
+.card-pic {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
 .ella {
   font-size: 120px;
   font-family: "Libre Baskerville", serif;
@@ -68,23 +137,51 @@ h2 {
   padding-bottom: 30px;
 }
 
-.cafes {
-  display: grid;
+.img-responsive {
+  width: 100%;
+  display: block;
+}
+.grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-
-  .cafe {
-    background-color: blueviolet;
-    color: white;
-    display: flex;
-    height: 100px;
-    font-size: 24px;
-    border-radius: 8px;
-    align-items: center;
-    justify-content: center;
-  }
+  grid-gap: 63px;
+  margin-left: 42px;
+  margin-right: 42px;
+}
+.cafe {
+  background-color: rgb(251, 250, 252);
+  align-items: center;
+  justify-content: center;
 }
 
+.cafe-header.grid {
+  grid-gap: 0;
+}
+
+.space {
+  padding: 35px;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.card_topic {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.btn1 {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background: #2e06bd;
+}
 .footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.9),
