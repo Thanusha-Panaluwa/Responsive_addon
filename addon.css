@@ -4,41 +4,46 @@
     max-width: 100%;
   }
 
-  body {
-    text-align: center;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-    font-size: 9px;
-  }
-  header {
-    padding: 60px 0;
-  }
-  header h1 {
-    font-size: 46px;
-  }
-
-  header h3 {
-    font-size: 12px;
-  }
-
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
   }
+}
 
-  section {
-    padding: 30px;
-  }
-  header .ella {
-    font-size: 60px;
-  }
+body {
+  text-align: center;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  font-size: 9px;
+}
+header {
+  padding: 60px 0;
+}
+header h1 {
+  font-size: 46px;
+}
 
-  .cafe-header img {
-    display: none;
-  }
+header h3 {
+  font-size: 12px;
+}
 
-  .embed {
-    aspect-ratio: 16 / 9;
-  }
+.grid {
+  grid-template-columns: 1fr;
+  grid-gap: 32px;
+}
+
+section {
+  padding: 30px;
+}
+header .ella {
+  font-size: 60px;
+}
+
+.cafe-header img {
+  display: none;
+}
+
+.embed {
+  aspect-ratio: 16 / 9;
 }
 
 .up {
@@ -69,12 +74,16 @@ header {
   grid-gap: 64px;
 }
 
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.grid-2-columns {
-  grid-template-columns: 1fr 1fr;
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 .ella {
@@ -220,4 +229,8 @@ h2 {
   height: 150px;
   padding: 6px;
   margin: 0 auto;
+}
+
+.insta {
+  background-color: white;
 }
