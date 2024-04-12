@@ -1,34 +1,21 @@
-@media (max-width: 960px) {
-  img,
-  video {
-    max-width: 100%;
-  }
 
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
-  }
-}
+
 
 body {
   text-align: center;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-  font-size: 9px;
+  /* overflow-x: hidden;  Hide horizontal scrollbar */
+  font-size: 13px;
 }
 header {
   padding: 60px 0;
 }
 header h1 {
-  font-size: 46px;
+  font-size: 42px;
+ 
 }
 
 header h3 {
-  font-size: 12px;
-}
-
-.grid {
-  grid-template-columns: 1fr;
-  grid-gap: 32px;
+  font-size: 16px;
 }
 
 section {
@@ -38,12 +25,36 @@ header .ella {
   font-size: 60px;
 }
 
-.cafe-header img {
-  display: none;
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.img-responsive {
+  width: 100%;
+  display: block;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.cafe-header.grid {
+  grid-gap: 0;
 }
 
 .embed {
-  aspect-ratio: 16 / 9;
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
 }
 
 .up {
@@ -64,33 +75,20 @@ header {
   text-align: center;
   padding: 200px 200px;
 }
-.card-pic {
+/*.card-pic {
   width: 100%;
   aspect-ratio: 1/1;
 }
-
-.grid {
-  display: grid;
-  grid-gap: 64px;
-}
-
-.grid-2-columns {
-  grid-template-columns: 1fr 1fr;
-}
-
-.grid-3-columns {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.grid-3-columns-with-first-narrow {
-  grid-template-columns: 1fr 2fr 2fr;
-}
+*/
 
 .ella {
-  font-size: 120px;
   font-family: "Libre Baskerville", serif;
   padding: 50px 0 50px;
 }
+.ella h2{
+  font-size: 140px;
+}
+
 .detail {
   border-radius: 100%;
   height: 450px;
@@ -107,6 +105,22 @@ header {
   display: flex;
 }
 
+/*
+.cafes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3px;
+  background-color: aliceblue;
+  padding: 25px 25px;
+  display: flex;
+}
+*/
+
+.cafe {
+  background: rgb(251, 250, 252);
+  margin: 30px 0;
+}
+
 .part1 {
   text-align: justify;
   font-family: "Libre Baskerville", serif;
@@ -119,7 +133,9 @@ header {
 }
 .pars {
   color: rgb(143, 129, 129);
+  font-size: 14.5px;
 }
+
 .why {
   font-size: 70px;
   font-family: "Libre Baskerville", serif;
@@ -138,38 +154,25 @@ h2 {
   padding-bottom: 30px;
 }
 
-.img-responsive {
-  width: 100%;
-  display: block;
-}
+/*
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 63px;
   margin-left: 42px;
   margin-right: 42px;
 }
-.cafe {
-  background-color: rgb(251, 250, 252);
-  align-items: center;
-  justify-content: center;
-}
 
-.cafe-header.grid {
-  grid-gap: 0;
-}
+*/
+
+
 
 .space {
-  padding: 35px;
+  padding: 30px;
 }
+
 .embed {
   width: 100%;
   aspect-ratio: 1/1;
-}
-
-.card_topic {
-  font-family: "Libre Baskerville", serif;
-  font-weight: bold;
-  padding-bottom: 10px;
 }
 
 .btn1 {
@@ -234,3 +237,54 @@ h2 {
 .insta {
   background-color: white;
 }
+
+@media only screen and (max-width: 960px) {
+  .pars {
+    font-size: 10px;  
+  }
+
+ .text-center {
+   text-align: center;
+ }
+
+  .part img{
+    display:none;
+  }
+
+  .cafe-header img {
+    display: none;
+  }
+
+  header {
+  padding: 60px 0;
+}
+
+header h1 {
+  font-size: 48px;  
+}
+
+header h2 {
+  font-size: 20px;
+}
+
+header h3 {
+  font-size: 12px;
+}
+
+.grid {
+  grid-template-columns: 1fr;
+  grid-gap: 32px;
+}
+
+section {
+  padding: 30px;
+}
+
+.embed {
+  aspect-ratio: 16 / 9;
+}
+
+
+}
+
+/* End of media */
